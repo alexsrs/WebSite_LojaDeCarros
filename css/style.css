@@ -10,12 +10,19 @@ html,body{
 
 .container{
 	width: 100%;
-	max-width: 1400px;
+	max-width: 1280px;
 	margin: 0 auto;
 }
 
 .clear{
 	clear: both;
+}
+
+/* HEADER */
+
+header{
+	padding: 20px 2% 35px 2%;
+	height: 130px;
 }
 
 header div.logo{
@@ -24,4 +31,43 @@ header div.logo{
 
 header nav.desktop{
 	float: right;
+	position: relative;
+	top: 40px;
+}
+
+header nav.desktop ul{
+	list-style-type: none;
+}
+
+header nav.desktop ul li{
+	float: left;	
+	font-size: 23px;
+	padding: 0 30px;
+}
+
+header nav.desktop a{
+	color: black;
+	text-decoration: none;
+}
+
+/* BANNER */
+
+section.banner{
+	width: 100%;
+	height: 100vw;
+	min-height: 600px;
+	max-height: 800px;
+	background-color: black;
+	background-image: url('../images/bg.jpg');
+	background-size: contain;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+@media acreen and (max-width: 768px){
+	section.banner{
+		height: 70vh;
+		min-height: 0;
+		max-height: 800px;
+	}
 }
