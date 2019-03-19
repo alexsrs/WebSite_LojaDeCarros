@@ -99,6 +99,7 @@ section.banner{
 	color: black;
 	position: relative;
 	left: -30px;
+	text-transform: lowercase;
 }
 
 @media screen and (max-width: 1400px){
