@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
 }
 
 html,body{
@@ -43,6 +44,8 @@ header nav.desktop ul li{
 	float: left;	
 	font-size: 23px;
 	padding: 0 30px;
+	font-style: italic;
+	text-transform: uppercase;
 }
 
 header nav.desktop a{
@@ -54,9 +57,7 @@ header nav.desktop a{
 
 section.banner{
 	width: 100%;
-	height: 100vw;
-	min-height: 600px;
-	max-height: 800px;
+	height: 600px;
 	background-color: black;
 	background-image: url('../images/bg.jpg');
 	background-size: contain;
@@ -64,10 +65,59 @@ section.banner{
 	background-repeat: no-repeat;
 }
 
-@media acreen and (max-width: 768px){
+.text-banner{
+	padding: 100px;	
+}
+
+.text-banner-single{
+	width: 230px;
+	margin-top: 20px;
+	padding: 12px 30px;
+	height: 60px;
+	text-transform: uppercase;
+	color: white;
+	font-size: 23px;
+	background-image: url('../images/box-text.png');
+	background-size: 100% 100%;
+}
+
+.text-banner .text-banner-single:nth-of-type(2){
+	width: 200px;
+	position: relative;
+	left: -10px;
+}
+
+.text-banner .text-banner-single:nth-of-type(3){
+	width: 170px;
+	position: relative;
+	left: -20px;
+}
+
+.text-banner .text-banner-single:nth-of-type(4){
+	width: 270px;
+	background-image: url('../images/box-white-text.png');
+	color: black;
+	position: relative;
+	left: -30px;
+}
+
+@media screen and (max-width: 1400px){
+
+	/* BANNER */
 	section.banner{
-		height: 70vh;
-		min-height: 0;
-		max-height: 800px;
+		background-size: 75% auto;
+		background-position: 100% 100%;
+	}
+}
+
+@media screen and (max-width: 700px){
+	
+	nav.desktop{
+		display: none;
+	}
+
+	/* BANNER */
+	.text-banner{
+		padding: 100px 60px;	
 	}
 }
