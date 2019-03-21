@@ -249,6 +249,7 @@ section.servicos-descricao{
 .half1-wraper li{
 	margin-left: 20px;
 	font-size: 18px;
+	font-weight: 200;
 }
 
 .half1-wraper a{
@@ -275,6 +276,7 @@ section.servicos-descricao{
 }
 
 .depoimento-single p{
+	font-weight: 200;
 	font-size: 22px;
 }
 
@@ -298,6 +300,106 @@ section.servicos-descricao{
 	color: #252525;
 	font-size: 23px;
 }
+
+/* Contato */
+
+section.contato{
+	padding: 80px 2%;
+}
+
+section.contato .line-titulo h2{
+	position: relative;
+	background: white;
+	display: inline-block;
+	text-align: center;
+	font-size: 23px;
+	padding: 0 20px;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+section.contato form{
+	max-width: 600px;
+	margin: 50px auto;
+}
+
+section.contato .input-wraper{
+	float: left;
+	padding: 10px;
+	margin-top: 7px;
+}
+
+.w100{
+	width: 100%;
+}
+
+.w50{
+	width: 50%;
+}
+
+section.contato input[type=text]{
+	width: 100%;
+	border: 1px solid #CCCCCC;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 15px;
+}
+
+section.contato textarea{
+	width: 100%;
+	border: 1px solid #CCCCCC;
+	height: 120px;
+	padding: 8px;
+	padding-left: 15px;
+	resize: none;
+}
+
+section.contato form .input-wraper:nth-of-type(5){
+	text-align: center;
+}
+
+section.contato input[type=submit]{
+	cursor: pointer;
+	font-size: 16px;
+	display: inline-block;
+}
+
+/* Footer */
+footer{
+	padding: 40px 2%;
+	background: #252525;
+}
+footer .container{
+	max-width: 1000px;
+}
+
+footer nav{
+	float: left;
+}
+
+footer nav ul{
+	list-style-type: none;
+}
+
+footer nav ul li {
+	float: left;
+	font-style: italic;
+	padding: 0 35px;
+	font-size: 19px;
+}
+
+footer nav ul a{
+	color: white;
+	text-decoration: none;
+}
+
+footer p{
+	font-weight: 200;
+	float: right;
+	color: white;
+	font-size: 16px;
+}
+
 
 @media screen and (max-width: 1400px){
 
@@ -335,6 +437,10 @@ section.servicos-descricao{
 		display: block;
 	}
 
+	header nav.mobile ul{
+		display: none;
+	}
+
 	/* BANNER */
 	.text-banner{
 		padding: 100px 60px;	
@@ -369,6 +475,11 @@ section.servicos-descricao{
 	}
 
 	.half1,.half2{
+		width: 100%;
+	}
+
+	/* Contato */
+	.w50{
 		width: 100%;
 	}
 }
