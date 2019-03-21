@@ -220,8 +220,6 @@ section.servicos-descricao{
 	display: flex;
 }
 
-
-
 .half1{
 	width: 50%;
 	text-align: center;
@@ -400,8 +398,6 @@ footer p{
 	font-size: 16px;
 }
 
-
-
 @media screen and (max-width: 1400px){
 
 	/* BANNER */
@@ -420,12 +416,23 @@ footer p{
 		margin-top: 20px;
 	}
 
+	/* Footer */
+	footer .container{
+		text-align: center;
+		float: none;
+	}
+
+	footer nav{
+		display: inline-block;
+		float: none;
+		padding-bottom: 25px;
+	}
+
+	footer p{
+		display: block;
+		float: none;
+	}
 }
-
-@media screen and (max-width: 768px){
-
-}
-
 
 @media screen and (max-width: 700px){
 	
@@ -448,12 +455,12 @@ footer p{
 	}
 
 	/* VEICULOS DESTAQUE */
-
 	section.veiculos-destaque .container{
 		max-width: 1000px;
 		padding: 40px 0;
 		text-align: center;
 	}
+
 	.vitrine-destaque{
 		display: inline-block;
 		float: none;
@@ -483,4 +490,6 @@ footer p{
 	.w50{
 		width: 100%;
 	}
+
+	
 }
