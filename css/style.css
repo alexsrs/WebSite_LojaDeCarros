@@ -11,7 +11,7 @@ html,body{
 
 .container{
 	width: 100%;
-	max-width: 1280px;
+	max-width: 1400px;
 	margin: 0 auto;
 }
 
@@ -197,9 +197,7 @@ section.veiculos-destaque .line-titulo h2{
 	padding-top: 8px;
 }
 
-.vitrine-destaque a{
-	margin-left: 8px;
-	margin-top: 15px;
+.btn1{
 	color: white;
 	/*font-weight: bold;*/
 	display: block;
@@ -212,6 +210,95 @@ section.veiculos-destaque .line-titulo h2{
 	border-right: 2px solid #B21E1E;
 }
 
+.vitrine-destaque a{
+	margin-left: 8px;
+	margin-top: 15px;
+}
+
+/* Servicos */
+section.servicos-descricao{
+	display: flex;
+}
+
+
+
+.half1{
+	width: 50%;
+	text-align: center;
+	padding: 90px 0;
+	background-color: #242424;
+	color: white;
+}
+
+.half1-wraper{
+	text-align: left;
+	display: inline-block;
+}
+
+.half1-wraper h2{
+	font-weight: normal;
+	font-style: italic;
+	font-size: 32px;
+}
+
+.half1-wraper ul{
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.half1-wraper li{
+	margin-left: 20px;
+	font-size: 18px;
+}
+
+.half1-wraper a{
+	margin-left: 40px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.half2{
+	width: 50%;
+	padding: 90px 100px;
+	background-color: #EB2D2D;
+	color: white;
+}
+
+.half2 h2{
+	font-weight: normal;
+	font-style: italic;
+	font-size: 32px;
+}
+
+.half2 .depoimento-single{
+	margin-top: 20px;
+}
+
+.depoimento-single p{
+	font-size: 22px;
+}
+
+.navigation{
+	float: left;
+	margin-top: 30px;
+	width: 100%;
+	max-width: 700px;
+}
+
+.arrows{
+	float: left;
+}
+.navigation img{
+	cursor: pointer;
+	margin: 0 20px;
+}
+
+.nome-depoimento{
+	float: right;
+	color: #252525;
+	font-size: 23px;
+}
+
 @media screen and (max-width: 1400px){
 
 	/* BANNER */
@@ -220,6 +307,22 @@ section.veiculos-destaque .line-titulo h2{
 		background-position: 100% 100%;
 	}
 }
+
+@media screen and (max-width: 900px){
+
+	/* BANNER */
+	.half1-wraper a{
+		display: block;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+
+}
+
 
 @media screen and (max-width: 700px){
 	
@@ -253,5 +356,19 @@ section.veiculos-destaque .line-titulo h2{
 
 	.vitrine-destaque a{
 		display: inline-block;
+	}
+
+	/* Servicos */
+	section.servicos-descricao{
+		flex-direction: column;
+	}
+
+	.half1{
+		text-align: left;
+		padding: 80px 100px;
+	}
+
+	.half1,.half2{
+		width: 100%;
 	}
 }
