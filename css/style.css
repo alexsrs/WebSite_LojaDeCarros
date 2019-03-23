@@ -11,7 +11,7 @@ html,body{
 
 .container{
 	width: 100%;
-	max-width: 1400px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -134,7 +134,7 @@ section.banner{
 	text-transform: lowercase;
 }
 
-/* VEICULOS DESTAQUE */
+/* VEÍCULOS DESTAQUE */
 
 section.veiculos-destaque{
 	padding: 90px 2%;
@@ -160,7 +160,7 @@ section.veiculos-destaque .container{
 	padding: 40px 0;
 }
 
-section.veiculos-destaque .line-titulo h2{
+.line-titulo h2{
 	position: relative;
 	background: white;
 	display: inline-block;
@@ -215,7 +215,7 @@ section.veiculos-destaque .line-titulo h2{
 	margin-top: 15px;
 }
 
-/* Servicos */
+/* SERVIÇOS */
 section.servicos-descricao{
 	display: flex;
 }
@@ -246,7 +246,7 @@ section.servicos-descricao{
 
 .half1-wraper li{
 	margin-left: 20px;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 200;
 }
 
@@ -299,22 +299,13 @@ section.servicos-descricao{
 	font-size: 23px;
 }
 
-/* Contato */
+/* CONTATO */
 
 section.contato{
 	padding: 80px 2%;
 }
 
-section.contato .line-titulo h2{
-	position: relative;
-	background: white;
-	display: inline-block;
-	text-align: center;
-	font-size: 23px;
-	padding: 0 20px;
-	font-style: italic;
-	text-transform: uppercase;
-}
+
 
 section.contato form{
 	max-width: 600px;
@@ -362,7 +353,7 @@ section.contato input[type=submit]{
 	display: inline-block;
 }
 
-/* Footer */
+/* FOOTER */
 footer{
 	padding: 40px 2%;
 	background: #252525;
@@ -398,6 +389,119 @@ footer p{
 	font-size: 16px;
 }
 
+footer a {
+	text-decoration: none;
+	color: white;
+}
+
+/* PAGINA NOVA - venda.html */
+/* VENDA */
+section.venda{
+	min-height: 100%;
+}
+
+.content-venda{
+	padding-top: 40px;
+}
+
+/* SIDEBAR */
+.sidebar{
+	float: left;
+	width: 30%;
+}
+
+.search1{
+	width: 300px;
+}
+
+.search1 h2{
+	font-size: 20px;
+	color: black;
+	font-weight: normal;
+}
+
+.search1 .barra-preco{
+	width: 100%;
+	height: 10px;
+	background: white;
+	border: 1px solid #CCCCCC;
+	margin-top: 8px;
+	border-radius: 20px;
+	position: relative;
+}
+
+.barra-preco-fill{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 20%;
+	height: 10px;
+	background: rgb(200 200 200);
+	border-radius: 20px;
+}
+
+.pointer-barra{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: calc(20% - 3px);
+	top: -3px;
+	cursor: pointer;
+	border-radius: 6px;
+	background: rgb(210 210 210);
+	border: 1px solid black;
+}
+
+.valor-pesquisa{
+	margin-top: 8px;
+}
+
+.valor-pesquisa p{
+	color: black;
+	font-size: 14px;
+}
+
+.valor-pesquisa p:nth-of-type(1){
+	float: left;
+}
+
+.valor-pesquisa p:nth-of-type(2){
+	float: right;
+}
+
+.search2{
+	margin-top: 40px;
+}
+
+.search2 h2{
+	font-size: 20px;
+	color: black;
+	font-weight: normal;
+}
+
+.form-venda-wraper{
+	margin-top: 10px;
+}
+
+.form-venda-wraper input[type=checkbox]{
+	display: none;
+}
+
+.form-venda-wraper label{
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.form-venda-wraper span{
+	padding: 0 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+
 @media screen and (max-width: 1400px){
 
 	/* BANNER */
@@ -416,7 +520,7 @@ footer p{
 		margin-top: 20px;
 	}
 
-	/* Footer */
+	/* FOOTER */
 	footer .container{
 		text-align: center;
 		float: none;
@@ -454,7 +558,7 @@ footer p{
 		padding: 100px 60px;	
 	}
 
-	/* VEICULOS DESTAQUE */
+	/* VEÍCULOS DESTAQUE */
 	section.veiculos-destaque .container{
 		max-width: 1000px;
 		padding: 40px 0;
@@ -472,7 +576,7 @@ footer p{
 		display: inline-block;
 	}
 
-	/* Servicos */
+	/* SERVIÇOS */
 	section.servicos-descricao{
 		flex-direction: column;
 	}
@@ -486,10 +590,8 @@ footer p{
 		width: 100%;
 	}
 
-	/* Contato */
+	/* CONTATO */
 	.w50{
 		width: 100%;
 	}
-
-	
 }
