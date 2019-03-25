@@ -351,6 +351,7 @@ section.contato input[type=submit]{
 footer{
 	padding: 40px 2%;
 	background: #252525;
+	margin-top: 20px;
 }
 footer .container{
 	max-width: 1000px;
@@ -639,7 +640,69 @@ section.venda-single .container{
 	background-size: cover;	
 }
 
+/* PAGINA NOVA - sobre.html */
+/* SOBRE */
 
+section.sobre{
+	min-height: 90%;
+	padding: 0 2% 60px 2%;
+}
+
+section.sobre .container{
+	max-width: 1000px;
+}
+
+section.sobre .img-destaque-sobre{
+	width: 100%;
+	padding-top: 60%;
+	margin-top: 60px;
+	background-image: url('../images/galpao.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+section.sobre .descricao-autor{
+	margin-top: 60px;
+	padding: 0 5%;
+}	
+
+.descricao-autor h2{
+	margin-top: 40px;
+	font-size: 22px;
+}	
+
+.descricao-autor p{
+	margin-top: 20px;
+	text-align: justify;
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 35px;
+}	
+
+section.sobre .descricao-autor2{
+	margin: 60px 0;
+	padding: 0 5%;
+}
+
+.img-small{
+	float: left;
+	width: 20%;
+	padding-top: 20%;
+	background-image: url('../images/perfil.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.descricao-autor-small{
+	float: left;
+	width: 80%;
+	text-align: justify;
+	padding: 10px 50px;
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 35px;
+}
 
 @media screen and (max-width: 1400px){
 
@@ -768,5 +831,17 @@ section.venda-single .container{
 
 	.info-veiculo{
 		width: 100%;
+	}
+
+	/* PAGINA NOVA - sobre.html */
+	/* SOBRE */
+	.img-small{	
+		width: 100%;
+		padding-top: 100%;
+	}
+
+	.descricao-autor-small{
+		width: 100%;
+		padding: 20px 2%;
 	}
 }
