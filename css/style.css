@@ -623,13 +623,19 @@ section.venda-single .container{
 }
 
 .nav-galeria-wraper{
+	/*
 	width: 200%;
+	via JS
+	*/
 }
 
 .mini-img-wraper{
 	float: left;
-	padding: 4px;
+	padding: 9px;
+	/*
 	width: calc(33.33% * (100 / 200));
+	via JS
+	*/
 }
 
 .mini-img{
