@@ -152,10 +152,13 @@ $(function(){
 		var curPage = url[url.length-1].split('?');
 
 		if(curPage[1] != undefined && curPage[1] =='contato'){
-			$('header nav a').css('color','black');
-			$('footer nav a').css('color','white');
+			//$('header nav a').css('color','black');
+			//$('footer nav a').css('color','white');
 			$('[goto=contato]').css('color','#EB2D2D');
 			$('html,body').animate({scrollTop:$('#contato').offset().top});			
+		} else{
+			
+
 		}
 
 	}
