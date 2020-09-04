@@ -19,7 +19,7 @@
 					<li><a href="home">Home</a></li>
 					<li><a href="venda">Venda</a></li>
 					<li><a href="sobre">Sobre</a></li>
-					<li><a goto="contato" href="">Contato</a></li>
+					<li><a href="contato" href="">Contato</a></li>
 				</ul>
 			</nav><!--desktop-->
 			<nav class="mobile">
@@ -27,21 +27,21 @@
 					<li><a href="home">Home</a></li>
 					<li><a href="venda">Venda</a></li>
 					<li><a href="sobre">Sobre</a></li>
-					<li><a goto="contato" href="">Contato</a></li>
+					<li><a href="contato" href="">Contato</a></li>
 				</ul>
 			</nav><!--mobile-->
 			<div class="clear"></div>
 		</div><!--container-->
 	</header>
 
-<?php 
+<?php
 	if(isset($_GET['url'])){
 		if(file_exists($_GET['url']).'.html'){
-		include($_GET['url'].'.html');
-	}else {
-		include('404.html');
+			include($_GET['url'].'.html');
+		}else{
+			include('404.html');
 		}
-	} else{
+	}else{
 		include('home.html');
 	}
 ?>
@@ -53,7 +53,7 @@
 					<li><a href="home">Home</a></li>
 					<li><a href="venda">Venda</a></li>
 					<li><a href="sobre">Sobre</a></li>
-					<li><a goto="contato" href="">Contato</a></li>
+					<li><a href="contato" href="">Contato</a></li>
 				</ul>
 			</nav>
 			<p>© 2019 Landing Page development by <a href="http://www.creapix.com.br">Creapix</a><br />
